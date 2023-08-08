@@ -40,3 +40,38 @@ textvar = "hello, I am"
 
 print(textvar, numvar)
 #commas add spaces automatically
+
+#len
+
+invar1 = input("type a word: ")
+lettercount = len(invar1)
+reverseword = '' #empty variable to be assigned later
+for indexitem in range(lettercount -1, -1, -1): #-1 is needed because invar1 is base 0 and lettercount is base 1
+    reverseword = reverseword + invar1[indexitem]
+print(invar1[indexitem])
+
+#list functions
+listvar1 = [2,3,4,5,6,7,8,9]
+#list.append(object)
+listvar1.append(7)
+#list.remove(value)
+listvar1.remove(3)
+#list.insert(index,object)
+listvar1.insert(1,2)
+#list.count(value)
+print(listvar1.count(2))
+
+print(listvar1)
+#making a string into a list
+listitems = "Dozey.Beakey.Mick.Titch"
+print(listitems.split('.'))
+#creating a string from a list
+separator = ';'
+print(separator.join(listitems))
+
+#'in' test
+
+drinks = ["coffee", "tea", "water"]
+drinktest = input("What would you like to drink? ")
+if drinktest in drinks:
+    print ()
