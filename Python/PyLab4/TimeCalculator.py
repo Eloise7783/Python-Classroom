@@ -27,8 +27,11 @@ while option != 9:
         hourOfDay2 = int(listOfTimes2[1])
         minuteOfDay2 = int(listOfTimes2[2])
         #adding the minutes
-        addedMinutes = minuteOfDay1 + minuteOfDay2
+        totalMinutes = minuteOfDay1 + minuteOfDay2
         #adding the hours
+        totalHours = hourOfDay1 + hourOfDay2
+        #adding the days
+        totalDays = dayOfMonth1 + dayOfMonth2
     elif option == 2:
         dayTimeStr1 = input("Enter the first time, DD:HH:MM -")
         dayTimeStr2 = input("Enter the second time, DD:HH:MM -")
