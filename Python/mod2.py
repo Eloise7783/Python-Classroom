@@ -46,7 +46,7 @@ print(textvar, numvar)
 invar1 = input("type a word: ")
 lettercount = len(invar1)
 reverseword = '' #empty variable to be assigned later
-for indexitem in range(lettercount -1, -1, -1): #-1 is needed because invar1 is base 0 and lettercount is base 1
+for indexitem in range(lettercount -1, -1, -1): #start, stop, step : -1 is needed because invar1 is base 0 and lettercount is base 1
     reverseword = reverseword + invar1[indexitem]
 print(invar1[indexitem])
 
