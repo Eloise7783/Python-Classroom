@@ -22,17 +22,24 @@ with open("Python/PyLab7/carSale.csv","r") as openedFileVar:
 		companies.append(stringToList[0])
 		#monthly sales
 		janSales.append(stringToList[1])
-		febSales = stringToList[2]
-		marSales = stringToList[3]
-		aprSales = stringToList[4]
-		maySales = stringToList[5]
-		junSales = stringToList[6]
-		julSales = stringToList[7]
-		augSales = stringToList[8]
+		febSales.append(stringToList[2])
+		marSales.append(stringToList[3])
+		aprSales.append(stringToList[4])
+		maySales.append(stringToList[5])
+		junSales.append(stringToList[6])
+		julSales.append(stringToList[7])
+		augSales.append(stringToList[8])
 
-	januaryInts = listToNums(janSales)
 	#loop over each sales list to create a new list
-
+	januaryInts = listToNums(janSales)
+	februaryInts = listToNums(febSales)
+	marchInts = listToNums(marSales)
+	aprilInts = listToNums(aprSales)
+	mayInts = listToNums(maySales)
+	juneInts = listToNums(junSales)
+	julyInts = listToNums(julSales)
+	augustInts = listToNums(augSales)
+	
 	#janSalesNumber = janSales.remove()
 	#janTotal = sum(janSalesNumber)
 	print(januaryInts)
