@@ -19,5 +19,5 @@ vowels.vowelCheck(stringIn)
 #if letter in vowelList:
 	#print(True)
 
-			#for indivLetter in self.lettersList:
+#for indivLetter in self.lettersList:
 		#if letter == indivLetter:
