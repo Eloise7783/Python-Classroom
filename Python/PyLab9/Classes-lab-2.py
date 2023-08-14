@@ -74,11 +74,11 @@ elif optionInput == "3":
     elif balanceInput == "3":
         print("The entertainment budget balance is",entertainment.balance())
 elif optionInput == "4":
-    transferFromInput = input(("""Which budget would you like to transfer from?
+    transferFromInput = input("""Which budget would you like to transfer from?
     1 - Food
     2 - Clothing
     3 - Entertainment
-    """))
+    """)
     if transferFromInput == "1":
         transferAmount = int(input("Enter the amount you'd like to transfer: "))
         transferTo = input("""Which budget would you like to transfer to?
@@ -92,7 +92,7 @@ elif optionInput == "4":
             food.transfer(transferAmount,entertainment)
             print(transferAmount,"transferred to Entertainment budget")
     elif transferFromInput == "2":
-        transferAmount = int(input(("Enter the amount you'd like to transfer: ")))
+        transferAmount = int(input("Enter the amount you'd like to transfer: "))
         transferTo = input("""Which budget would you like to transfer to?
     1 - Food
     2 - Entertainment
@@ -104,7 +104,7 @@ elif optionInput == "4":
             clothing.transfer(transferAmount,entertainment)
             print(transferAmount,"transferred to Entertainment budget")
     elif transferFromInput == "3":
-        transferAmount = int(input(("Enter the amount you'd like to transfer: ")))
+        transferAmount = int(input("Enter the amount you'd like to transfer: "))
         transferTo = input("""Which budget would you like to transfer to?
     1 - Food
     2 - Clothing
