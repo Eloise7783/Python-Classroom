@@ -4,15 +4,22 @@ class Lettercheck:
 	
 	def vowelCheck(self,letter):
 		if letter in self.lettersList:
-			print(True)
+			print("Vowel = ", True)
 		else:
-			print(False)
+			print("Vowel = ", False)
+
+	def consonantCheck(self,letter):
+		if letter not in self.lettersList:
+			print("Consonant = ", True)
+		else:
+			print("Consonant = ", False)
 
 stringIn = input("Enter a letter and I'll determine if it's a vowel: ")	
 	
 vowels = Lettercheck(["a", "e", "i", "o", "u"])
 
 vowels.vowelCheck(stringIn)
+vowels.consonantCheck(stringIn)
 
 #vowelList=["a", "e", "i", "o", "u"]
 
