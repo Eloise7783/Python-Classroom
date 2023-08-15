@@ -26,7 +26,7 @@ def calculateScore():
         Roll4 = D6.roll(D6)
         sortedRolls = [Roll1,Roll2,Roll3,Roll4]
         sortedRolls.sort()
-        removeLowest = sortedRolls.remove(sortedRolls[0])
+        sortedRolls.remove(sortedRolls[0])
         Score = sum(sortedRolls)
         return Score
 getStartedInput = input("""
